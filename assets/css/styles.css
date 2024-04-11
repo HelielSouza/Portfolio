@@ -3,6 +3,7 @@
   --white-color: #FFFFFF;
   --light-gray-color: #EEEEEE;
   --secondary-color: crimson;
+  --blue-basic: #658bf7;
   --gap: 3rem;
 }
   
@@ -58,14 +59,14 @@ h6 {
 }
 
 .main-bg {
-  background-image: url('../img/main-bg.svg');
+  background-image: url('../img/back1.svg');
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
 }
 
 .white-bg {
-  background: var(--white-color);
+  background-color: #010216;
 }
 
 .main-content {
@@ -85,7 +86,7 @@ h6 {
   left: 0;
   right: 0;
   width: 100%;
-  border-bottom: 0.1rem solid var(--light-gray-color);
+  border-bottom: 0.1rem solid #434343;
   z-index: 1;
 }
 
@@ -99,7 +100,7 @@ h6 {
 
 .menu h1 {
   font-size: 2.3rem;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .menu h1 a {
@@ -115,7 +116,7 @@ h6 {
   display: block;
   padding: 2rem;
   font-size: 1.8rem;
-  color: var(--primary-color);
+  color: var(--white-color);
   position: relative;
 }
 
@@ -126,7 +127,7 @@ h6 {
   left: 50%;
   width: 0;
   height: 0.2rem;
-  background: var(--secondary-color); 
+  background: var(--blue-basic); 
   transition: all 300ms ease-in-out;
 }
 
