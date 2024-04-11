@@ -7,7 +7,7 @@
   --gap: 3rem;
 }
   
-/*Settings*/
+/* -------------------- Settings*/
 
 * {
   margin: 0;
@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 3rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -40,6 +45,10 @@ h1 {
 
 h2 {
   font-size: 5.5rem;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 h3 {
@@ -58,15 +67,21 @@ h6 {
   font-size: 3.5rem;
 }
 
-.main-bg {
-  background-image: url('../img/back1.svg');
+/* -------------------- General */
+
+.dark-bg-svg {
+  background-image: url('../img/test.svg');
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
 }
 
-.white-bg {
+.dark-bg-menu {
   background-color: #010216;
+}
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color);
 }
 
 .main-content {
@@ -79,7 +94,7 @@ h6 {
   min-height: 100vh;
 }
 
-/* Menu */
+/* -------------------- Menu */
 .menu {
   position: fixed;
   top: 0;
@@ -139,7 +154,7 @@ h6 {
   height: 65px;
 }
 
-/* Home */
+/* -------------------- Home */
 .intro-content {
   position: relative;
   top: -8rem;
@@ -155,15 +170,42 @@ h6 {
   justify-content: center;
 }
 
-.intro-text-content h2 {
-  font-size: 6rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
 .intro-img img,
 .intro-img svg {
   max-width: 100%;
   height: auto;
+}
+
+/* -------------------- About */
+.about-content {
+  position: relative;
+  top: -8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+}
+.about-text-content, .about-imgs {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.about-img-heliel {
+  display: flex;
+  justify-content: center;
+}
+.about-img-heliel img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+.about-img-skills {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.about-img-skills img {
+  max-width: 10%;
+  height: auto;
+  margin-right: 0.5rem;
 }
