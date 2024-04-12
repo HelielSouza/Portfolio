@@ -15,7 +15,7 @@
     transition: .5s;
 }
 .slider .list .item img{
-    border-radius: 50px;
+    border-radius: 30px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,7 +28,7 @@
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000 05%, transparent
+        to top, #010216 10%, transparent
     );
 }
 .slider .list .item .content{
