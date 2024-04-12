@@ -70,7 +70,7 @@ h6 {
 /* -------------------- General */
 
 .dark-bg-svg {
-  background-image: url('../img/test.svg');
+  background-image: url('../img/main-dark-bg.svg');
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
