@@ -1,0 +1,26 @@
+@media (min-width: 1000px) and (max-width: 1360px) { 
+    /*General*/
+    h2 {
+        font-size: 5.5rem;
+    }
+
+    /*Home*/
+    .intro-content {
+        top: -2rem;
+    }
+    .intro-img img,
+    .intro-img svg {
+        height: 45rem;
+    }
+    /*about*/
+    .about-content { 
+        top: 2rem;
+    }
+    .about-text-content p {
+        font-size: 1.8rem;
+    }
+    .about-img-heliel img {
+        max-width: 70%;
+    }
+}
+  

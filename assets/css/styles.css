@@ -94,6 +94,10 @@ h6 {
   min-height: 100vh;
 }
 
+.menu-spacing {
+  height: 65px;
+}
+
 /* -------------------- Menu */
 .menu {
   position: fixed;
@@ -153,6 +157,12 @@ h6 {
 .menu-spacing {
   height: 65px;
 }
+.neonText {
+  color: #fff;
+  text-shadow:
+  0px 0px 25px rgb(63 184 255), 
+  120px 50px 160px rgb(76 124 211);
+}
 
 /* -------------------- Home */
 .intro-content {
@@ -168,6 +178,7 @@ h6 {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .intro-img img,
@@ -179,7 +190,6 @@ h6 {
 /* -------------------- About */
 .about-content {
   position: relative;
-  top: -8rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
@@ -208,4 +218,7 @@ h6 {
   max-width: 10%;
   height: auto;
   margin-right: 0.5rem;
+}
+.about-text-content strong {
+  color: cornflowerblue;
 }
