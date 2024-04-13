@@ -22,5 +22,25 @@
     .about-img-heliel img {
         max-width: 70%;
     }
+
+    /* Carrousel */
+    .slider {
+        max-width: 70rem;
+        margin-left: 60rem;
+    }
+    .thumbnail {
+        margin-top: 35rem;
+    }
+    .thumbnail .item {
+        height: 200px;
+        width: 200px;
+    }
+    .slider .list .item::after{
+        background-image: linear-gradient(
+        to top, #010216 0%, transparent
+    );
+    }
+    
+
 }
   

@@ -99,6 +99,11 @@ h6 {
   height: 65px;
 }
 
+.center-heading {
+  display: flex;
+  justify-content: center;
+}
+
 /* -------------------- Menu */
 .menu {
   position: fixed;
