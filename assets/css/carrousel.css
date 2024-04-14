@@ -1,6 +1,8 @@
-.projects-container {
+.projects-content {
     margin: 0 auto;
     max-width: 130rem;
+    height: 100vh;
+    top: 2rem;
 }
 .slider{
     height: 100vh;
@@ -146,4 +148,31 @@
     width: 500px;
     max-width: 80%;
     z-index: 1;
+}
+.slider .content .item.active h2{
+    animation-delay: 0.5s;
+}
+.slider .content .item.active p:nth-child(3){
+    animation-duration: 2.3s;
+}
+.slider .content .item.active span:nth-child(1),
+.slider .content .item.active p,
+.slider .content .item.active h2,
+.slider .content .item.active span:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+
+.content a img {
+    height: 30px;
+    color: white;
+}
+.content .links {
+    display: flex;
+    flex-direction: column;
+}
+.links .link-item {
+    margin-top: 1rem;
 }

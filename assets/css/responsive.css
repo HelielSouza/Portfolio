@@ -3,6 +3,7 @@
     h2 {
         font-size: 5.5rem;
     }
+    
 
     /*Home*/
     .intro-content {
@@ -24,16 +25,25 @@
     }
 
     /* Carrousel */
+    .projects-content {
+        position: relative;
+        top: 6rem;
+    }
     .slider {
         max-width: 70rem;
         margin-left: 60rem;
+        height: 80vh;
+
     }
     .thumbnail {
-        margin-top: 35rem;
+        margin-top: 30rem;
     }
     .thumbnail .item {
         height: 200px;
         width: 200px;
+    }
+    .thumbnail .item img{
+        height: 80%;
     }
     .slider .list .item::after{
         background-image: linear-gradient(
