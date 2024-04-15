@@ -25,15 +25,27 @@
     }
 
     /* Carrousel */
+    .content a img {
+        height: 30px;
+        color: white;
+    }
+    .content .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .links .link-item {
+        margin-top: 1rem;
+    }
     .projects-content {
         position: relative;
         top: 6rem;
+        max-width: 130rem;
     }
     .slider {
         max-width: 70rem;
         margin-left: 60rem;
         height: 80vh;
-
+        height: 80%;
     }
     .thumbnail {
         margin-top: 30rem;
@@ -49,6 +61,9 @@
         background-image: linear-gradient(
         to top, #010216 0%, transparent
     );
+    }
+    .slider .list .item.active{
+        bottom: 400px;
     }
     
 
