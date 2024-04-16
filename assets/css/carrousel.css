@@ -172,10 +172,18 @@
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 .content{
-    position: absolute;
-    right: 120%;
-    top: 0;
+    position: relative;
+    right: 75%;
+    bottom: 20%;
+    display: flex;
+    width: 45rem;
     z-index: 1;
+}
+.content .item {
+    display: none;
+}
+.content .item.active {
+    display: block;
 }
 .content a img {
     height: 30px;
