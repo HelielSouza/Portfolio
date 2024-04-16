@@ -29,6 +29,9 @@
         height: 30px;
         color: white;
     }
+    .content {
+        right: 85%;
+    }
     .content .links {
         display: flex;
         flex-direction: column;
@@ -38,8 +41,7 @@
     }
     .projects-content {
         position: relative;
-        top: 6rem;
-        max-width: 130rem;
+        top: 0rem;
     }
     .slider {
         max-width: 70rem;
@@ -48,7 +50,7 @@
         height: 80%;
     }
     .thumbnail {
-        margin-top: 30rem;
+        margin-top: -6rem;
     }
     .thumbnail .item {
         height: 200px;
@@ -63,8 +65,10 @@
     );
     }
     .slider .list .item.active{
-        bottom: 400px;
+        bottom: 100px;
     }
-    
+    .projects-text-container h2{
+        margin-bottom: 1rem;
+    }
 
 }
