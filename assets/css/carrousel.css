@@ -4,9 +4,20 @@
     flex-direction: column;
     height: 100vh;
 }
+.projects-text-container, .slider {
+    margin-top: 6rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.content h4 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
 .slider{
     max-width: 80rem;
-    margin-left: 70rem;
+    margin-left: 50rem;
     height: 100%;
     display: flex;
     position: relative;
@@ -32,7 +43,7 @@
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #010216 10%, transparent
+        to top, #010216 5%, transparent
     );
 }
 .slider .list .item .content{
@@ -52,9 +63,9 @@
     margin: 0;
 }
 .slider .list .item.active{
-    bottom: 470px;
+    bottom: 300px;
     opacity: 1;
-    z-index: 10;
+    z-index: 4;
 }
 @keyframes showContent {
     to{
@@ -66,16 +77,16 @@
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
 .slider .list .item.active p:nth-child(3){
-    transform: translateY(30px);
+    transform: translateY(00px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent .5s .7s ease-in-out 1 forwards;
+    animation: showContent .5s .5s ease-in-out 1 forwards;
 }
 .slider .list .item.active h2{
     animation-delay: 1s;
 }
 .slider .list .item.active p:nth-child(3){
-    animation-duration: 1.3s;
+    animation-duration: 0.3s;
 }
 .arrows{
     position: absolute;
@@ -100,8 +111,8 @@
 }
 .thumbnail{
     position: absolute;
-    top: 55rem;
-    z-index: 11;
+    top: 40rem;
+    z-index: 5;
     display: flex;
     gap: 10px;
     width: 100%;
@@ -116,7 +127,7 @@
 }
 .thumbnail .item{
     width: 400px;
-    height: 250px;
+    height: 180px;
     filter: brightness(.5);
     transition: .5s;
 }
@@ -144,14 +155,8 @@
         top: 10%;
     }
 }
-.content{
-    position: absolute;
-    right: 150%;
-    width: 500px;
-    max-width: 80%;
-    z-index: 1;
-}
-.slider .content .item.active h2{
+
+.slider .content .item.active h4{
     animation-delay: 0.5s;
 }
 .slider .content .item.active p:nth-child(3){
@@ -159,14 +164,19 @@
 }
 .slider .content .item.active span:nth-child(1),
 .slider .content .item.active p,
-.slider .content .item.active h2,
+.slider .content .item.active h4,
 .slider .content .item.active span:nth-child(3){
     transform: translateY(30px);
     filter: blur(20px);
     opacity: 0;
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
-
+.content{
+    position: absolute;
+    right: 120%;
+    top: 0;
+    z-index: 1;
+}
 .content a img {
     height: 30px;
     color: white;
@@ -174,7 +184,33 @@
 .content .links {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
 }
-.links .link-item {
+.content .link-item {
     margin-top: 1rem;
 }
+.span-link, .span-not-ok {
+    font-size: 14px;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+}
+.span-not-ok img {
+    height: 30px;
+}
+.span-link a{ 
+    display: flex;
+    align-items: center;
+}
+.span-link span {
+    color: white;
+    margin-left: 1rem;
+    transition: color .5s ease;
+}
+.span-link span:hover {
+    color: rgb(37, 151, 199);
+}
+
+
+
