@@ -14,9 +14,6 @@
         height: 45rem;
     }
     /*about*/
-    .about-content { 
-        top: 2rem;
-    }
     .about-text-content p {
         font-size: 1.8rem;
     }
@@ -31,6 +28,10 @@
     }
     .content {
         right: 85%;
+        top: -5rem;
+    }
+    .content h4 {
+        font-size: 3.5rem;
     }
     .content .links {
         display: flex;
@@ -48,9 +49,10 @@
         margin-left: 60rem;
         height: 80vh;
         height: 80%;
+        bottom: 3rem;
     }
     .thumbnail {
-        margin-top: -6rem;
+        margin-top: -13.5rem;
     }
     .thumbnail .item {
         height: 200px;
@@ -71,4 +73,16 @@
         margin-bottom: 1rem;
     }
 
+}
+
+@media screen and (max-width: 678px) {
+    .thumbnail{
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+    .arrows{
+        top: 10%;
+    }
 }
