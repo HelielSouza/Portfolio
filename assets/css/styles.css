@@ -68,8 +68,45 @@ h6 {
   font-size: 3.5rem;
 }
 
-/* -------------------- General */
+/* -------------------- Scrool animations style */
+.hidden-heading {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-5%);
+  transition: all 1s;
+}
+.hidden-p {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-8%);
+  transition: all 1s;
+}
+.hidden-fade-in {
+  transform: scale(0.85); 
+  transition: all 2.5s;
+}
+.hidden-section-projects {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10%);
+  transition: all 1s;
+}
+.hidden-heading-time {
+  opacity: 0.5;
+  transform: scale(0.90);
+  transform: translateY(25%);
+  transition: all 1.5s;
+}
 
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  transform: scale(1);
+}
+
+/* -------------------- General */
 .dark-bg-svg {
   background-image: url('../img/main-dark-bg.svg');
   background-size: cover;
@@ -109,7 +146,9 @@ h6 {
   text-shadow:
   0px 0px 25px rgb(63 184 255), 
   120px 50px 160px rgb(76 124 211);
+
 }
+
 
 /* -------------------- Menu in header*/
 .menu {

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+    <script defer src="assets/js/scroll.js"></script>
     <title>Heliel Souza</title>
 </head>
 
@@ -70,26 +71,30 @@
                 </div>
             </div>
             <div class="about-text-content">
-                <h2 class="neonText">Sobre mim</h2>
-                <p>Me chamo <strong>Heliel Souza</strong>, sou Desenvolvedor Web Backend, onde estou me
-                    especializando para me tornar um Desenvolvedor Full Stack.
-                    Moro atualmente em Sumaré (SP), mas sou natural de Macatuba (SP).
-                </p>
-                <p>No momento tenho conhecimento desde o desenvolvimento
-                    backend em Django e DRF (Em Python) e Spring Boot (Java), conhecimento na parte frontend com HTML,
-                    CSS, JS e Jquery, banco de dados como MySQL e PostGreSQL, além implatações de sistemas em servidores
-                    Ubuntu,
-                    criações de modelos de Rede Neural Convolucional e também versionamento no GIT.
-                </p>
-                <p>Além do que já conheço, venho melhorando a cada dia minhas noções em servidores,
-                    redes e inteligência artifical, onde coloco em prática através de projetos no ar,
-                    todo o conhecimento que estou adquirindo. Pretendo ainda estudar mais sobre desenvolvimento
-                    Mobile e outros frameworks frontend.
-                </p>
+                <h2 class="neonText hidden-heading">Sobre mim</h2>
+                <div class="about-text-p hidden-p">
+                    <p>Me chamo <strong>Heliel Souza</strong>, sou Desenvolvedor Web Backend, onde estou me
+                        especializando para me tornar um Desenvolvedor Full Stack.
+                        Moro atualmente em Sumaré (SP), mas sou natural de Macatuba (SP).
+                    </p>
+                    <p>No momento tenho conhecimento desde o desenvolvimento
+                        backend em Django e DRF (Em Python) e Spring Boot (Java), conhecimento na parte frontend com
+                        HTML,
+                        CSS, JS e Jquery, banco de dados como MySQL e PostGreSQL, além implatações de sistemas em
+                        servidores
+                        Ubuntu,
+                        criações de modelos de Rede Neural Convolucional e também versionamento no GIT.
+                    </p>
+                    <p>Além do que já conheço, venho melhorando a cada dia minhas noções em servidores,
+                        redes e inteligência artifical, onde coloco em prática através de projetos no ar,
+                        todo o conhecimento que estou adquirindo. Pretendo ainda estudar mais sobre desenvolvimento
+                        Mobile e outros frameworks frontend.
+                    </p>
+                </div>
             </div>
     </section>
 
-    <section id="projects" class="projects section">
+    <section id="projects" class="projects section hidden-section-projects">
         <div class="main-content projects-content">
             <div class="projects-text-container">
                 <h2 class="neonText center-heading">Projetos</h2>
@@ -224,16 +229,17 @@
             <!--main-content-->
             <div class="timeline-row">
                 <div class="timeline-column">
-                    <h2 class="title">
+                    <h2 class="title hidden-fade-in">
                         <i class='bx bx-briefcase'></i>Experiência
                     </h2>
                     <div class="timeline-box">
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Set 2023 - Atualmente</div>
-                                <h3>Estágio de Suporte TI</h3>
-                                <h4>CEDET</h4>
-                                <p>Atuo na manuntenção de hardwares, instalações de softwares, formatções e instalações
+                                <h3 class="hidden-heading-time">Estágio de Suporte TI</h3>
+                                <h4 class="hidden-heading-time">CEDET</h4>
+                                <p class="hidden-p">Atuo na manuntenção de hardwares, instalações de softwares,
+                                    formatções e instalações
                                     de terminais e também na manutenção no servidor de rede e telefonia da empresa.
                                 </p>
                             </div>
@@ -242,9 +248,10 @@
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Jan 2020 - Fev 2023</div>
-                                <h3>Operador de máquina</h3>
-                                <h4>Pastifício Selmi S.A</h4>
-                                <p>Atuei na operação de máquina laminadoras no controle de parâmetros númericos de
+                                <h3 class="hidden-heading-time">Operador de máquina</h3>
+                                <h4 class="hidden-heading-time">Pastifício Selmi S.A</h4>
+                                <p class="hidden-p">Atuei na operação de máquina laminadoras no controle de parâmetros
+                                    númericos de
                                     velocidade de rotação de cilindros cortadores e marcadores.</p>
                             </div>
                         </div>
@@ -252,9 +259,10 @@
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Jan 2018 - Dez 2019</div>
-                                <h3>Aprendiz de eletricista</h3>
-                                <h4>Pastifício Selmi S.A</h4>
-                                <p>Acompanhava serviços de manutenção elétrica industrial, programação de CLP, arduino
+                                <h3 class="hidden-heading-time">Aprendiz de eletricista</h3>
+                                <h4 class="hidden-heading-time">Pastifício Selmi S.A</h4>
+                                <p class="hidden-p">Acompanhava serviços de manutenção elétrica industrial, programação
+                                    de CLP, arduino
                                     e infraestrutura elétrica.
                                 </p>
                             </div>
@@ -263,7 +271,7 @@
                     </div>
                 </div>
                 <div class="timeline-column">
-                    <h2 class="title">
+                    <h2 class="title hidden-fade-in">
                         <i class='bx bxs-graduation'></i>Educação
                     </h2>
                     <div class="timeline-box">
@@ -271,9 +279,9 @@
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Fev 2022 - Dez 2023</div>
-                                <h3>Análise e Desenvolvimento de Sistemas</h3>
-                                <h4>Colégio Técnico de Campinas</h4>
-                                <p>Curso técnico que me deu conhecimento para desenvolvimento de
+                                <h3 class="hidden-heading-time">Análise e Desenvolvimento de Sistemas</h3>
+                                <h4 class="hidden-heading-time">Colégio Técnico de Campinas</h4>
+                                <p class="hidden-p">Curso técnico que me deu conhecimento para desenvolvimento de
                                     sistemas web, mobile e desktop, com diferentes linguagens e frameworks,
                                     além de estrutura de dados, arquitetura orientada a serviços, etc.
                                 </p>
@@ -283,9 +291,10 @@
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Jan 2020 - Jul 2020</div>
-                                <h3>Eletrônica</h3>
-                                <h4>ETEC Bento quirino</h4>
-                                <p>Curso que acabei não finalizando por conta da pandemia que se iniciou
+                                <h3 class="hidden-heading-time">Eletrônica</h3>
+                                <h4 class="hidden-heading-time">ETEC Bento quirino</h4>
+                                <p class="hidden-p">Curso que acabei não finalizando por conta da pandemia que se
+                                    iniciou
                                 </p>
                             </div>
                         </div>
@@ -293,9 +302,10 @@
                         <div class="timeline-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i>Fev 2018 - Dez 2019</div>
-                                <h3>Eletricista de manutenção eletroeletrônico</h3>
-                                <h4>SENAI - Sumaré</h4>
-                                <p>Curso de aprendizagem industrial, aprendi tudo de elétrica e eletrônica,
+                                <h3 class="hidden-heading-time">Eletricista de manutenção eletroeletrônico</h3>
+                                <h4 class="hidden-heading-time">SENAI - Sumaré</h4>
+                                <p class="hidden-p">Curso de aprendizagem industrial, aprendi tudo de elétrica e
+                                    eletrônica,
                                     tive meu primeiro contato com programação na linguagem C para arduino e
                                     também programação de CLP.
                                 </p>
