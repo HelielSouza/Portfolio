@@ -364,7 +364,7 @@ h6 {
   position: absolute;
   top: 30%;
   right: 50px;
-  z-index: 100;
+  z-index: 6;
 }
 .arrows button{
   background-color: #eee5;
@@ -446,11 +446,16 @@ h6 {
 }
 
 /* Trails */
+.trails-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .timeline {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 0 9%;
 }
 
@@ -467,8 +472,14 @@ h6 {
 .timeline-column .title {
   position: relative;
   display: inline-block;
-  font-size: 28px;
+  font-size: 22px;
   margin: 32px 0 16px 30px;
+
+}
+.timeline-column .title i{ 
+  height: 20px;
+  padding-right: 10px;
+  color: lightskyblue;
 }
 
 .timeline-column .timeline-box {
@@ -496,7 +507,7 @@ h6 {
   padding: 24px;
   border: 2px solid #0ef;
   border-radius: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 65px;
 }
 
 .timeline-content .content .year {
@@ -519,19 +530,3 @@ h6 {
   font-size: 16px;
 }
 
-.animate {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 105%;
-  height: 105%;
-  background: var(--dark-color);
-  animation: show-right .4s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-}
-
-@keyframes show-right {
-  100% {
-    width: 0;
-  }
-}
