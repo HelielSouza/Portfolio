@@ -20,8 +20,8 @@ hiddenHeading.forEach((el) => observer.observe(el));
 const hiddenParagraph = document.querySelectorAll('.hidden-p');
 hiddenParagraph.forEach((el) => observer.observe(el));
 
-const hiddenSectionProject = document.querySelectorAll('.hidden-section-projects');
-hiddenSectionProject.forEach((el) => observer.observe(el));
+const hiddenToUp = document.querySelectorAll('.hidden-to-up');
+hiddenToUp.forEach((el) => observer.observe(el));
 
 const hiddenHeadingTime = document.querySelectorAll('.hidden-heading-time');
 hiddenHeadingTime.forEach((el) => observer.observe(el));
