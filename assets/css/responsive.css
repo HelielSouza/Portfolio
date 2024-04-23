@@ -14,6 +14,9 @@
         height: 45rem;
     }
     /*about*/
+    .about-content {
+        top: 3rem;
+    }
     .about-text-content p {
         font-size: 1.8rem;
     }

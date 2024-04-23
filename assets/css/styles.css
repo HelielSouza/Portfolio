@@ -13,6 +13,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -67,6 +68,33 @@ h5 {
 h6 {
   font-size: 3.5rem;
 }
+table {
+  min-width: 360px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--light-gray-color)
+}
+
+tfoot td, table th {
+  background: var(--light-gray-color);
+}
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
 
 /* -------------------- Scrool animations style */
 .hidden-heading {
@@ -105,6 +133,16 @@ h6 {
   transform: translateX(0);
   transform: translateY(0);
   transform: scale(1);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden-fade-in,
+  .hidden-heading,
+  .hidden-heading-time,
+  .hidden-to-up,
+  .hidden-p {
+    transition: none;
+  }
 }
 
 /* -------------------- General */
@@ -563,12 +601,18 @@ h6 {
   font-size: 16px;
 }
 
-/* -------------------- Menu in header*/
+/* -------------------- Certificates cards */
 .certificates-content { /* div */
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+}
+.certificates-text-container {
+  margin-top: 6rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 .card-container {
   display: flex;
@@ -643,4 +687,103 @@ h6 {
 .card-content .btn-in-progress {
   background-color: #434343;
   color: var(--white-color)
+}
+
+/* -------------------- Contacts */
+.contacts-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  min-height: 100vh;
+  margin-top: 8rem;
+}
+.contacts-text-content {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+.contacts-text-content .social-media img{
+  height:  5rem;
+  margin: 2rem;
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+.contacts-text-content .social-media img:hover{
+  transform: scale(1.5);
+}
+.contacts-text-content, .contacts-img {
+  margin-top: 10rem;
+}
+.contacts-img img,
+.contacts-img svg {
+  max-width: 100%;
+  height: 35rem;
+}
+.contacts-img img {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-form {
+  grid-column: span 2;
+}
+
+.contacts-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-grid legend {
+  font-style: italic;
+  font-size: 1.6rem; 
+  margin-bottom: 3rem;
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: var(--white-color);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  outline: none;
+  transition: all 150ms ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px var(--blue-basic);
+}
+
+.form-group button {
+  border: 0.5rem solid var(--white-color);
+  background: none;
+  color: var(--white-color);
+  padding: 1.5rem 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+  color: gray;
 }
