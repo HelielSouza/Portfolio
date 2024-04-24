@@ -690,6 +690,9 @@ body .full-width {
 }
 
 /* -------------------- Contacts */
+.contacts {
+  margin-bottom: 10rem;
+}
 .contacts-content {
   position: relative;
   display: grid;
@@ -730,6 +733,8 @@ body .full-width {
 }
 
 .contacts-form .form-grid {
+  max-width: 1450px;
+  margin: 0 auto;
   border: none;
   display: flex;
   flex-direction: row;
@@ -770,7 +775,7 @@ body .full-width {
 }
 
 .form-group button {
-  border: 0.5rem solid var(--white-color);
+  border: 3px solid var(--white-color);
   background: none;
   color: var(--white-color);
   padding: 1.5rem 2rem;
@@ -786,4 +791,21 @@ body .full-width {
 
 .form-group ::placeholder {
   color: gray;
+}
+
+/* -------------------- Footer */
+.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--dark-color);
+  border-top:  0.1rem solid #434343;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  padding: 2rem;
 }
