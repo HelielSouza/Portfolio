@@ -36,6 +36,14 @@
                     <li><a href="#contacts">Contatos</a></li>
                 </ul>
             </nav>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class='bx bxs-moon'></i>
+                    <i class='bx bx-sun'></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
         </div>
     </aside>
 
@@ -112,7 +120,7 @@
                             <div class="link-item">
                                 <span class="span-link">
                                     <a href="https://www.diagnose.helielsouza.com.br" target="_blank">
-                                        <img src="assets/img/icons/link.svg">
+                                        <i class='bx bx-link-alt'></i>
                                         <span>Online</span>
                                     </a>
                                 </span>
@@ -121,7 +129,7 @@
                                 <span class="span-link">
                                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7182150015765671936/"
                                         target="_blank">
-                                        <img src="assets/img/icons/linkedin.svg">
+                                        <i class='bx bxl-linkedin-square'></i>
                                         <span>Postagem LinkedIn</span>
                                     </a>
                                 </span>
@@ -129,7 +137,7 @@
                             <div class="link-item">
                                 <span class="span-link">
                                     <a href="https://github.com/TCC-22555-22527/Exames-Sanguineos" target="_blank">
-                                        <img src="assets/img/icons/github.svg">
+                                        <i class='bx bxl-github'></i>
                                         <span>Repositório</span>
                                     </a>
                                 </span>
@@ -145,14 +153,14 @@
                         <div class="links">
                             <div class="link-item">
                                 <span class="span-not-ok">
-                                    <img src="assets/img/icons/hourglass.svg">
+                                    <i class='bx bxs-hourglass'></i>
                                     <span>Em desenvolvimento</span>
                                 </span>
                             </div>
                             <div class="link-item">
                                 <span class="span-link">
                                     <a href="https://github.com/HelielSouza/Django-Recipe-Blog" target="_blank">
-                                        <img src="assets/img/icons/github.svg">
+                                        <i class='bx bxl-github'></i>
                                         <span>Repositório</span>
                                     </a>
                                 </span>
@@ -168,14 +176,14 @@
                         <div class="links">
                             <div class="link-item">
                                 <span class="span-not-ok">
-                                    <img src="assets/img/icons/hourglass.svg">
+                                    <i class='bx bxs-hourglass'></i>
                                     <span>Em desenvolvimento</span>
                                 </span>
                             </div>
                             <div class="link-item">
                                 <span class="span-link">
                                     <a href="https://github.com/TCC-22555-22527/Exames-Sanguineos" target="_blank">
-                                        <img src="assets/img/icons/github.svg">
+                                        <i class='bx bxl-github'></i>
                                         <span>Repositório</span>
                                     </a>
                                 </span>
@@ -399,11 +407,11 @@
                 <form action="https://api.web3forms.com/submit" method="POST" target="_blank">
                     <fieldset class="form-grid">
                         <legend>Entre em contato via E-mail também!</legend>
-                        
+
                         <input type="hidden" name="access_key" id="access_key">
                         <script src="assets/js/config.js" type="module"></script>
                         <script>
-                            document.addEventListener('DOMContentLoaded', function() {
+                            document.addEventListener('DOMContentLoaded', function () {
                                 const accessKeyInput = document.getElementById('access_key');
                                 accessKeyInput.value = accessKey;
                             });
@@ -418,26 +426,29 @@
                             <input type="text" name="subject" id="subject" placeholder="Assunto" required>
                         </div>
 
-                        
+
                         <div class="form-group full-width">
                             <label for="message">Mensagem</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"
+                                required></textarea>
                         </div>
 
                         <div class="form-group full-width">
-                            <button type="submit">Enviar mensagem</button>                       
+                            <button type="submit">Enviar mensagem</button>
                         </div>
                     </fieldset>
-                    
+
                 </form>
             </div>
         </div>
 
     </section>
     <footer id="footer" class="footer white-bg">
-        <p><a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/heliel-souza/">Criado por Heliel Souza</a></p>
-      </footer>
+        <p><a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/heliel-souza/">Criado por Heliel
+                Souza</a></p>
+    </footer>
     <script src="assets/js/carrousel.js"></script>
+    <script src="assets/js/dark-light.js"></script>
 </body>
 
 </html>
