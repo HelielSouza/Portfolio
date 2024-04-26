@@ -172,6 +172,9 @@ body .full-width {
 .section {
   min-height: 100vh;
 }
+.section-certificates {
+  min-height: 100vh;
+}
 
 .menu-spacing {
   height: 65px;
@@ -287,7 +290,7 @@ body .full-width {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
-  height: 100vh;
+  min-height: 100vh;
 }
 .about-text-content, .about-imgs {
   display: flex;
@@ -348,11 +351,25 @@ body .full-width {
   font-size: 30px;
   color: white;
 }
+.content .info .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.content .info .bottom .stacks {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.content .info .bottom .stacks img {
+ padding: 5px; 
+ height: 45px;
+}
 .slider .content .links {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 .slider .content .link-item {
   margin-top: 1rem;
@@ -516,15 +533,12 @@ body .full-width {
       opacity: 1;
   }
 }
-.slider .content .item.active h4{
-  animation-delay: 0.5s;
-}
-.slider .content .item.active p:nth-child(3){
-  animation-duration: 2.3s;
-}
-.slider .content .item.active span:nth-child(1),
+
+
 .slider .content .item.active p,
 .slider .content .item.active h4,
+.slider .content .item.active .info .bottom .stacks img,
+.slider .content .item.active span:nth-child(1),
 .slider .content .item.active span:nth-child(3){
   transform: translateY(30px);
   filter: blur(20px);
@@ -543,7 +557,6 @@ body .full-width {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 9%;
 }
 .timeline .timeline-row {
   display: flex;
@@ -846,7 +859,7 @@ body .full-width {
   color: var(--white-color);
 }
 .light-bg-menu {
-  background-color: var(--white-color) !important;
+  background-color:#f7f7f7 !important;
 }
 .dark-color {
   color: var(--primary-color) !important;
@@ -881,7 +894,7 @@ body .full-width {
   box-shadow: 0px 2px 60px rgba(3, 4, 4, 0.59);
 }
 .dark-text-footer {
-  background-color: white;
+  background-color: #f7f7f7;
   color: var(--primary-color) !important;
   font-weight: bold;
 }
