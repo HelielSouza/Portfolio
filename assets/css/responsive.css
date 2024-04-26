@@ -1,4 +1,4 @@
-@media (min-width: 1000px) and (max-width: 1360px) { 
+@media (min-width: 1201px) and (max-width: 1360px) { 
     /*General*/
     h2 {
         font-size: 5.5rem;
@@ -80,7 +80,10 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 1001px) and (max-width: 1200px) {  
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
 
     .main-content {
         max-width: 78rem;
@@ -182,4 +185,117 @@
     .footer p {
         padding: 3.5rem;
     }
+}
+
+@media (min-width: 601px) and (max-width: 800px) { 
+}
+
+@media (min-width: 451px) and (max-width: 600px) { 
+    .main-content {
+        max-width: 78rem;
+    }
+    /* Intro section */
+    .intro-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro-img img {
+        height: 40rem;
+    }
+
+    /*About*/
+    .about {
+        margin-top: -2.5rem
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-text-content {
+        padding: 5rem 5rem 0 5rem;
+    }
+    .about-img-heliel img {
+        max-width: 60%;
+    }
+    .about-img-skills {
+        margin-top: 6rem;
+    }
+    
+    /* Projects */
+    .projects-content {
+        margin-bottom: 15rem;
+    }
+    .projects-text-container, .slider {
+        flex-flow: unset;
+        flex-direction: column;
+    }
+
+    .projects {
+        margin-top: 10.5rem;
+    }
+    .slider {
+        margin-left: 0;
+        max-width: 70rem;
+        margin: 0 auto;
+        flex-flow: unset;
+        flex-direction: column-reverse;
+    }
+    .slider .content {
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        top: 30%;
+        width: 63rem;
+        margin: 0 auto;
+    }
+    .slider .content .title {
+        position: relative;
+        top: 8%;
+        text-align: center;
+    }
+    .content .info .bottom .stacks {
+        width: 60%;
+    }
+    .thumbnail {
+        position: relative;
+        top: 140%;
+    }
+    /* Certificates */
+    .card {
+        width: 27.5rem;
+    }
+    .certificates-content {
+        min-height: unset;
+    }
+    .section-certificates {
+        min-height: unset;
+    }
+    
+    /*contacts */
+    .contacts-text-content .social-media img {
+        margin: 1rem;
+    }
+    .contacts-img {
+        margin: 10rem auto 0 auto;
+    }
+    .contacts-img img {
+        height: 20rem;
+    }
+    .form-grid legend {
+        font-size: 2rem;
+    }
+
+    /*footer*/ 
+    .footer p {
+        padding: 3.5rem;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 450px) {  
+}
+
+@media (min-width: 270px) and (max-width: 320px) {  
 }
