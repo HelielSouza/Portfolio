@@ -294,7 +294,247 @@
 
 }
 
-@media (min-width: 321px) and (max-width: 450px) {  
+@media (min-width: 381px) and (max-width: 450px) {  
+    .neonText {
+        max-width: 38rem;
+    }
+    .h2-mobile-neon {
+        font-size: 40px;
+    }
+    
+    .menu nav {
+        display: none;
+    }
+        
+    .main-content {
+        max-width: 38rem;
+    }
+    /* Intro section */
+    .intro-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: unset;
+        min-height: 100vh;
+        margin-top: -7rem;
+        margin-bottom: 4rem;
+    }
+    .intro-img img {
+        height: 20rem;
+    }
+
+    /*About*/
+    .about {
+        margin-top: 7rem;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img-heliel img {
+        max-width: 60%;
+    }
+    .about-img-skills {
+        margin-top: 6rem;
+    }
+    
+    /* Projects */
+    .projects-content {
+        margin-bottom: 30rem;
+    }
+    .projects-text-container, .slider {
+        flex-flow: unset;
+        flex-direction: column;
+    }
+
+    .projects {
+        margin-top: 10.5rem;
+    }
+    .slider {
+        margin-left: 0;
+        max-width: 38rem;
+        margin: unset;
+        flex-flow: unset;
+        flex-direction: column-reverse;
+    }
+    .slider .content {
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        top: 25%;
+        width: 35rem;
+        margin: 0 auto;
+    }
+    .slider .content .title {
+        position: relative;
+        top: 8%;
+        text-align: center;
+    }
+    .slider .content .heading-mobile h4 {
+        font-size: 20px;
+    }
+    .content .info .bottom .stacks {
+        width: 60%;
+    }
+    .thumbnail {
+        position: relative;
+        top: 140%;
+        padding: 0;
+    }
+    .thumbnail .item {
+        height: 100px;
+    }
+    /* Certificates */
+    .card {
+        width: 27.5rem;
+    }
+    .certificates-content {
+        min-height: unset;
+    }
+    .section-certificates {
+        min-height: unset;
+    }
+    
+    /*contacts */
+    .contacts-text-content .social-media img {
+        margin: 1rem;
+    }
+    .contacts-img {
+        margin: 10rem auto 0 auto;
+    }
+    .contacts-img img {
+        display: none;
+    }
+    .form-grid legend {
+        font-size: 2rem;
+    }
+    .contacts-form .form-grid {
+        max-width: 38rem;
+    }
+
+    /*footer*/ 
+    .footer p {
+        padding: 3.5rem;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 380px) {  
+    .neonText {
+        max-width: 31.5rem;
+    }
+    .h2-mobile-neon {
+        font-size: 40px;
+    }
+    
+    .menu nav {
+        display: none;
+    }
+        
+    .main-content {
+        max-width: 31.5rem;
+    }
+    /* Intro section */
+    .intro-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: unset;
+        min-height: 100vh;
+    }
+    .intro-img img {
+        height: 20rem;
+    }
+
+    /*About*/
+    .about {
+        margin-top: -2.5rem
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img-heliel img {
+        max-width: 60%;
+    }
+    .about-img-skills {
+        margin-top: 6rem;
+    }
+    
+    /* Projects */
+    .projects-content {
+        margin-bottom: 15rem;
+    }
+    .projects-text-container, .slider {
+        flex-flow: unset;
+        flex-direction: column;
+    }
+
+    .projects {
+        margin-top: 10.5rem;
+    }
+    .slider {
+        margin-left: 0;
+        max-width: 31.5rem;
+        margin: 0 auto;
+        flex-flow: unset;
+        flex-direction: column-reverse;
+    }
+    .slider .content {
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        top: 30%;
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .slider .content .title {
+        position: relative;
+        top: 8%;
+        text-align: center;
+    }
+    .content .info .bottom .stacks {
+        width: 60%;
+    }
+    .thumbnail {
+        position: relative;
+        top: 140%;
+    }
+    /* Certificates */
+    .card {
+        width: 31.5rem;
+    }
+    .certificates-content {
+        min-height: unset;
+    }
+    .section-certificates {
+        min-height: unset;
+    }
+    
+    /*contacts */
+    .contacts-text-content .social-media img {
+        margin: 1rem;
+    }
+    .contacts-img {
+        margin: 10rem auto 0 auto;
+    }
+    .contacts-img img {
+        display: none;
+    }
+    .form-grid legend {
+        font-size: 2rem;
+    }
+    .contacts-form .form-grid {
+        max-width: 31.5rem;
+    }
+
+    /*footer*/ 
+    .footer p {
+        padding: 3.5rem;
+    }
+
 }
 
 @media (min-width: 270px) and (max-width: 320px) {  
