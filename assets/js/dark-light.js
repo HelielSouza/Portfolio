@@ -25,6 +25,7 @@ chk.addEventListener('change', () => {
     }
     document.querySelector('.dark-bg-svg').classList.toggle('light-bg-svg');
     document.querySelector('.dark-bg-menu').classList.toggle('light-bg-menu');
+    document.querySelector('.about-text-p').classList.toggle('dark-color');
     document.querySelectorAll('.menu ul li a').forEach(h2 => {
         h2.classList.toggle('dark-color');
     })

@@ -285,6 +285,11 @@ body .full-width {
 }
 
 /* -------------------- About section*/
+.about {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
 .about-content {
   position: relative;
   display: grid;
@@ -644,7 +649,7 @@ body .full-width {
 }
 
 .card {
-  width: 32.5rem;
+  min-width: 32.5rem;
   background-color: var(--white-color);
   overflow: hidden;
   box-shadow: 0px 2px 60px rgb(43 189 237 / 20%);

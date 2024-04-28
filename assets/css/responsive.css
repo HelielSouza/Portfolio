@@ -156,10 +156,9 @@
         position: relative;
         top: 140%;
     }
+
+
     /* Certificates */
-    .card {
-        width: 27.5rem;
-    }
     .certificates-content {
         min-height: unset;
     }
@@ -294,7 +293,10 @@
 
 }
 
-@media (min-width: 381px) and (max-width: 450px) {  
+@media (min-width: 381px) and (max-width: 450px) {
+    .center-mobile {
+        text-align: center;
+    }  
     .neonText {
         max-width: 38rem;
     }
@@ -327,21 +329,23 @@
     /*About*/
     .about {
         margin-top: 7rem;
+        max-width: 38rem;
+        padding: 2rem;
     }
     .about-content {
         display: flex;
         flex-direction: column-reverse;
     }
     .about-img-heliel img {
-        max-width: 60%;
+        max-width: 80%;
     }
     .about-img-skills {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
     
     /* Projects */
     .projects-content {
-        margin-bottom: 30rem;
+        margin-bottom: 20rem;
     }
     .projects-text-container, .slider {
         flex-flow: unset;
@@ -349,20 +353,23 @@
     }
 
     .projects {
-        margin-top: 10.5rem;
+        margin-top: 7.5rem;
     }
     .slider {
         margin-left: 0;
         max-width: 38rem;
+        min-height: 70vh;
+        height: unset;
         margin: unset;
         flex-flow: unset;
         flex-direction: column-reverse;
     }
     .slider .content {
-        right: 0;
+        position: absolute;
+        right: -15px;
         bottom: 0;
         z-index: 0;
-        top: 25%;
+        top: 62%;
         width: 35rem;
         margin: 0 auto;
     }
@@ -374,17 +381,29 @@
     .slider .content .heading-mobile h4 {
         font-size: 20px;
     }
+
     .content .info .bottom .stacks {
-        width: 60%;
+        width: 75%;
+        margin: -1rem auto 1rem auto;
+    }
+    .content .info .bottom {
+        flex-direction: column-reverse;
     }
     .thumbnail {
-        position: relative;
-        top: 140%;
+        position: absolute;
+        top: 45%;
         padding: 0;
     }
     .thumbnail .item {
         height: 100px;
     }
+    .slider .content .item.active {
+        display: flex;
+        flex-direction: column;
+        max-width: 38rem;
+        margin: 0 auto;
+    }
+   
     /* Certificates */
     .card {
         width: 27.5rem;
@@ -397,20 +416,35 @@
     }
     
     /*contacts */
+    .contacts-form {
+        margin: 0 auto;
+        max-width: 37rem;
+    }
+    .contacts-content {
+        display: unset;
+    }
     .contacts-text-content .social-media img {
         margin: 1rem;
     }
     .contacts-img {
-        margin: 10rem auto 0 auto;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
     }
     .contacts-img img {
-        display: none;
+        height: 25rem;
+        margin: 0 auto;
     }
+    
     .form-grid legend {
         font-size: 2rem;
     }
     .contacts-form .form-grid {
         max-width: 38rem;
+    }
+    .center-submit {
+        display: flex;
+        justify-content: center;
     }
 
     /*footer*/ 
