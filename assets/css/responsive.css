@@ -84,7 +84,6 @@
 }
 
 @media (min-width: 801px) and (max-width: 1000px) {
-
     .main-content {
         max-width: 78rem;
     }
@@ -310,6 +309,11 @@
         
     .main-content {
         max-width: 38rem;
+    }
+     /* Menu */
+     .invert-menu-mobile {
+        display: flex;
+        flex-direction: row-reverse;
     }
     /* Intro section */
     .intro-content {

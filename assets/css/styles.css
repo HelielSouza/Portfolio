@@ -195,6 +195,9 @@ body .full-width {
 
 
 /* -------------------- Menu in header*/
+.menu-hamburguer-mobile {
+  display: none;
+}
 .menu {
   position: fixed;
   top: 0;
