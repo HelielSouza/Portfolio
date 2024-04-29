@@ -195,9 +195,10 @@ body .full-width {
 
 
 /* -------------------- Menu in header*/
-.menu-hamburguer-mobile {
+.menu-mobile {
   display: none;
 }
+
 .menu {
   position: fixed;
   top: 0;
@@ -652,6 +653,7 @@ body .full-width {
 }
 
 .card {
+  width: 32.5rem;
   min-width: 32.5rem;
   background-color: var(--white-color);
   overflow: hidden;
