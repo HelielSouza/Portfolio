@@ -148,6 +148,8 @@ body .full-width {
 }
 
 /* -------------------- General */
+
+
 .dark-bg-svg {
   background-image: url('../img/main-dark-bg.svg');
   background-size: 100%;
@@ -197,6 +199,13 @@ body .full-width {
 /* -------------------- Menu in header*/
 .menu-mobile {
   display: none;
+  cursor: pointer;
+}
+.menu-desktop {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
@@ -265,6 +274,16 @@ body .full-width {
 .menu-spacing {
   height: 65px;
 }
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* -------------------- Home section*/
 .intro-content {
@@ -274,14 +293,12 @@ body .full-width {
   gap: var(--gap);
   height: 100vh;
 }
-
 .intro-text-content, .intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   text-align: center;
 }
-
 .intro-img img,
 .intro-img svg {
   max-width: 100%;
@@ -542,8 +559,6 @@ body .full-width {
       opacity: 1;
   }
 }
-
-
 .slider .content .item.active p,
 .slider .content .item.active h4,
 .slider .content .item.active .info .bottom .stacks img,
@@ -874,6 +889,9 @@ body .full-width {
 .dark-color {
   color: var(--primary-color) !important;
   text-shadow: none;
+}
+.dark-color-background {
+  background: var(--primary-color) !important;
 }
 .slide-show .list .item.slide-white-shadow::after { 
   background-image: linear-gradient(to top, rgb(255 255 255 / 1%) 1%, transparent);
