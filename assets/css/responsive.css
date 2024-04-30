@@ -319,7 +319,7 @@
         width: 70vw;
         min-height: 100vh;
         overflow-y: auto;
-        z-index: 11;
+        z-index: 12;
         background: var(--dark-color);
         flex-direction: column;
         transition: transform 0.3s ease-in;
@@ -360,7 +360,7 @@
     }
     .menu-hamburguer-open {
         display: block;
-        z-index: 12;
+        z-index: 15;
     }
     .menu-hamburguer-open div{ 
         width: 32px;

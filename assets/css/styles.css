@@ -148,8 +148,31 @@ body .full-width {
 }
 
 /* -------------------- General */
-
-
+.overlay {
+  display: none; /* Esconde o overlay inicialmente */
+}
+.overlay.active {
+  display: block; /* Mostra o overlay quando o menu está aberto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade 0.5 */
+  z-index: 9; /* Garante que o overlay esteja abaixo do menu */
+}
+.overlay.active .nav-list,
+.overlay.active .menu-hamburguer-open {
+  position: relative;
+  z-index: 11; /* Define z-index automático para os elementos */
+}
+.shadow {
+  display: none;
+}
+.shadow.active {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .dark-bg-svg {
   background-image: url('../img/main-dark-bg.svg');
   background-size: 100%;
@@ -205,7 +228,7 @@ body .full-width {
   width: 100%;
   border-bottom: 0.1rem solid #8882828c;
   transition: transform 0.3s ease;
-  z-index: 10;
+  z-index: 11;
 }
 .menu.hidden {
   transform: translateY(-100%);
