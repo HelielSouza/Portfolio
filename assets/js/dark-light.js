@@ -1,32 +1,40 @@
 const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
-    const darkLogo = document.querySelector('.logo .logo-dark');
-    const lightLogo = document.querySelector('.logo .logo-light');
+    const darkLogoDesk = document.querySelector('.menu-desktop .logo .logo-dark');
+    const lightLogoDesk = document.querySelector('.menu-desktop .logo .logo-light');
+    const darkLogoMbl = document.querySelector('.menu-mobile .logo .logo-dark');
+    const lightLogoMbl = document.querySelector('.menu-mobile .logo .logo-light');
     const darkDev = document.querySelector('.intro-img .developer-dark');
     const lightDev = document.querySelector('.intro-img .developer-light');
     const darkContact = document.querySelector('.contacts-img .contact-dark');
     const lightContact = document.querySelector('.contacts-img .contact-light');
 
     if (chk.checked) {
-        darkLogo.style.display = 'none';
-        lightLogo.style.display = 'inline-block';
+        darkLogoDesk.style.display = 'none';
+        lightLogoDesk.style.display = 'inline-block';
+        darkLogoMbl.style.display = 'none';
+        lightLogoMbl.style.display = 'inline-block';
         darkDev.style.display = 'none';
         lightDev.style.display = 'inline-block';
         darkContact.style.display = 'none';
         lightContact.style.display = 'inline-block';
     } else {
-        darkLogo.style.display = 'inline-block';
-        lightLogo.style.display = 'none';
+        darkLogoDesk.style.display = 'inline-block';
+        lightLogoDesk.style.display = 'none';
+        darkLogoMbl.style.display = 'inline-block';
+        lightLogoMbl.style.display = 'none';
         darkDev.style.display = 'inline-block';
         lightDev.style.display = 'none';
         darkContact.style.display = 'inline-block';
         lightContact.style.display = 'none';
     }
+
     document.querySelector('.dark-bg-svg').classList.toggle('light-bg-svg');
     document.querySelector('.dark-bg-menu').classList.toggle('light-bg-menu');
-    
     document.querySelector('.about-text-p').classList.toggle('dark-color');
+    document.querySelector('.nav-list').classList.toggle('light-bg-menu');
+
     document.querySelectorAll('.menu ul li a').forEach(h2 => {
         h2.classList.toggle('dark-color');
     })
@@ -36,7 +44,6 @@ chk.addEventListener('change', () => {
     document.querySelectorAll('.menu ul li a').forEach(h2 => {
         h2.classList.toggle('crimson-color-hover');
     })
-
     document.querySelectorAll('.neonText').forEach(h2 => {
         h2.classList.toggle('dark-color');
     })

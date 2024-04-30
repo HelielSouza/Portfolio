@@ -197,6 +197,27 @@ body .full-width {
 
 
 /* -------------------- Menu in header*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid #8882828c;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+.menu.hidden {
+  transform: translateY(-100%);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .menu-mobile {
   display: none;
   cursor: pointer;
@@ -206,24 +227,6 @@ body .full-width {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  border-bottom: 0.1rem solid #8882828c;
-  z-index: 10;
-}
-
-.menu-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .menu-content .logo a {
