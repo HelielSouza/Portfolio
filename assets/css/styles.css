@@ -125,15 +125,15 @@ body .full-width {
 
 /* ---------------------------------------------- Scrool animations style */
 .hidden-heading {
-  opacity: 0.6;
+  opacity: 0.9;
   filter: blur(2px);
   transform: translateX(-5%);
   transition: all 1s;
 }
 .hidden-p {
-  opacity: 0.6;
+  opacity: 0.9;
   filter: blur(2px);
-  transform: translateX(-3%);
+  transform: translateX(-10%);
   transition: all 1s;
 }
 .hidden-fade-in {
