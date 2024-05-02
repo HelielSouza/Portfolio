@@ -1,125 +1,86 @@
+const toggleDarkMode = () => {
+    const elementsToToggle = [
+        ['.menu-desktop .logo .logo-dark', '.menu-desktop .logo .logo-light'],
+        ['.menu-mobile .logo .logo-dark', '.menu-mobile .logo .logo-light'],
+        ['.intro-img .developer-dark', '.intro-img .developer-light'],
+        ['.contacts-img .contact-dark', '.contacts-img .contact-light']
+    ];
+
+    elementsToToggle.forEach(([darkSelector, lightSelector]) => {
+        const darkElement = document.querySelector(darkSelector);
+        const lightElement = document.querySelector(lightSelector);
+        darkElement.style.display = chk.checked ? 'none' : 'inline-block';
+        lightElement.style.display = chk.checked ? 'inline-block' : 'none';
+    });
+
+    const elementsToToggleClass = [
+        ['.dark-bg-svg', 'light-bg-svg'],
+        ['.dark-bg-menu', 'light-bg-menu'],
+        ['.about-text-p', 'dark-color'],
+        ['.nav-list', 'light-bg-menu'],
+        ['footer', 'dark-text-footer']
+    ];
+
+    elementsToToggleClass.forEach(([selector, className]) => {
+        document.querySelector(selector).classList.toggle(className);
+    });
+
+    const elementsToToggleColor = [
+        'p',
+        '.menu ul li a',
+        '.menu-hamburguer-open div',
+        '.neonText',
+        '.link-item .span-link span',
+        '.link-item .span-not-ok span',
+        '.bx-link-alt',
+        '.bxl-github',
+        '.slider h4',
+        '.timeline-column .title',
+        '.timeline-column .title i',
+        '.timeline-content .content h3',
+        '.timeline-content .content h4',
+        'form legend',
+        'form label',
+        '.white-text',
+        'footer a'
+    ];
+
+    elementsToToggleColor.forEach(selector => {
+        document.querySelectorAll(selector).forEach(element => {
+            if (selector !== 'footer') {
+                element.classList.toggle('dark-color');
+            }
+        });
+    });
+
+    const elementsToToggleSpecificClass = [
+        ['.menu ul li a', 'crimson-color-hover'],
+        ['.slide-show .list .item', 'slide-white-shadow'],
+        ['.timeline-content .content', 'crimson-color-border'],
+        ['.timeline-box .timeline-content', 'crimson-color-point'],
+        ['.timeline-column .timeline-box', 'crimson-border-left'],
+        ['.content .year', 'crimson-color'],
+        ['.card', 'card-dark-shadow'],
+        ['.form-group input', ['crimson-color-border', 'crimson-box-shadow']],
+        ['.form-group textarea', ['crimson-color-border', 'crimson-box-shadow']],
+        ['.form-group button', 'form-button-light']
+    ];
+
+    elementsToToggleSpecificClass.forEach(([selector, classes]) => {
+        const elements = document.querySelectorAll(selector);
+        if (Array.isArray(classes)) {
+            classes.forEach(className => {
+                elements.forEach(element => {
+                    element.classList.toggle(className);
+                });
+            });
+        } else {
+            elements.forEach(element => {
+                element.classList.toggle(classes);
+            });
+        }
+    });
+};
+
 const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-    const darkLogoDesk = document.querySelector('.menu-desktop .logo .logo-dark');
-    const lightLogoDesk = document.querySelector('.menu-desktop .logo .logo-light');
-    const darkLogoMbl = document.querySelector('.menu-mobile .logo .logo-dark');
-    const lightLogoMbl = document.querySelector('.menu-mobile .logo .logo-light');
-    const darkDev = document.querySelector('.intro-img .developer-dark');
-    const lightDev = document.querySelector('.intro-img .developer-light');
-    const darkContact = document.querySelector('.contacts-img .contact-dark');
-    const lightContact = document.querySelector('.contacts-img .contact-light');
-
-    if (chk.checked) {
-        darkLogoDesk.style.display = 'none';
-        lightLogoDesk.style.display = 'inline-block';
-        darkLogoMbl.style.display = 'none';
-        lightLogoMbl.style.display = 'inline-block';
-        darkDev.style.display = 'none';
-        lightDev.style.display = 'inline-block';
-        darkContact.style.display = 'none';
-        lightContact.style.display = 'inline-block';
-    } else {
-        darkLogoDesk.style.display = 'inline-block';
-        lightLogoDesk.style.display = 'none';
-        darkLogoMbl.style.display = 'inline-block';
-        lightLogoMbl.style.display = 'none';
-        darkDev.style.display = 'inline-block';
-        lightDev.style.display = 'none';
-        darkContact.style.display = 'inline-block';
-        lightContact.style.display = 'none';
-    }
-
-    document.querySelector('.dark-bg-svg').classList.toggle('light-bg-svg');
-    document.querySelector('.dark-bg-menu').classList.toggle('light-bg-menu');
-    document.querySelector('.about-text-p').classList.toggle('dark-color');
-    document.querySelector('.nav-list').classList.toggle('light-bg-menu');
-    
-
-    document.querySelectorAll('p').forEach(h2 => {
-        h2.classList.toggle('dark-gray-color');
-    })
-    document.querySelectorAll('.menu ul li a').forEach(h2 => {
-        h2.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.menu-hamburguer-open div').forEach(h2 => {
-        h2.classList.toggle('dark-color-background');
-    })
-    document.querySelectorAll('.menu ul li a').forEach(h2 => {
-        h2.classList.toggle('crimson-color-hover');
-    })
-    document.querySelectorAll('.neonText').forEach(h2 => {
-        h2.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.link-item .span-link span').forEach(span => {
-        span.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.link-item .span-not-ok span').forEach(spann => {
-        spann.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.bx-link-alt').forEach(link_i => {
-        link_i.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.bxl-github').forEach(github_i => {
-        github_i.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.slider h4').forEach(h4 => {
-        h4.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('.slide-show .list .item').forEach(item => {
-        item.classList.toggle('slide-white-shadow');
-    });
-    document.querySelectorAll('.timeline-column .title').forEach(title => {
-        title.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('.timeline-column .title i').forEach(title_i => {
-        title_i.classList.toggle('crimson-color');
-    });
-    document.querySelectorAll('.timeline-content .content').forEach(border => {
-        border.classList.toggle('crimson-color-border');
-    });
-    document.querySelectorAll('.timeline-box .timeline-content').forEach(point => {
-        point.classList.toggle('crimson-color-point');
-    });
-    document.querySelectorAll('.timeline-column .timeline-box').forEach(border_left => {
-        border_left.classList.toggle('crimson-border-left');
-    });
-    document.querySelectorAll('.content .year').forEach(year => {
-        year.classList.toggle('crimson-color');
-    });
-     document.querySelectorAll('.timeline-content .content h3').forEach(cnt_h3 => {
-        cnt_h3.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('.timeline-content .content h4').forEach(cnt_h4 => {
-        cnt_h4.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('.card').forEach(card_sdhw => {
-        card_sdhw.classList.toggle('card-dark-shadow');
-    });
-    document.querySelectorAll('form legend').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('form label').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('dark-color');
-    });
-    document.querySelectorAll('.form-group input').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('crimson-color-border');
-    });
-    document.querySelectorAll('.form-group textarea').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('crimson-color-border');
-    });
-    document.querySelectorAll('.form-group input').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('crimson-box-shadow');
-    });
-    document.querySelectorAll('.form-group textarea').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('crimson-box-shadow');
-    });
-    document.querySelectorAll('.white-text').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('dark-text-footer');
-    });
-    document.querySelectorAll('footer a').forEach(form_lgnd => {
-        form_lgnd.classList.toggle('dark-text-footer');
-    });
-    document.querySelector('.form-group button').classList.toggle('form-button-light');
-});
-
+chk.addEventListener('change', toggleDarkMode);

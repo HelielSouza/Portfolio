@@ -28,7 +28,6 @@ let refreshInterval = setInterval(() => {
     next.click();
 }, 10000)
 function showSlider(){
-    // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
     let contentActiveOld = document.querySelector('.slider .content .item.active');
@@ -37,27 +36,21 @@ function showSlider(){
     thumbnailActiveOld.classList.remove('active');
     contentActiveOld.classList.remove('active');
 
-    // active new item
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
     content[itemActive].classList.add('active');
 
-    // Esconder todos os textos na .content
     document.querySelectorAll('.content .item').forEach(item => {
         item.style.display = 'none';
     });
-    // Mostrar apenas o texto correspondente ao item ativo
     document.querySelector(`.content .content-item-${itemActive}`).style.display = 'block';
 
-
-    // clear auto time run slider
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
     }, 10000)
 }
 
-// click thumbnail
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
