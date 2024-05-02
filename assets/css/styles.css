@@ -94,25 +94,25 @@ body .full-width {
 .hidden-p {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-10%);
+  transform: translateX(-6%);
   transition: all 1s;
 }
 .hidden-fade-in {
   transform: scale(0.95); 
-  transform: translateX(18%);
-  transition: all 2.5s;
+  transform: translateX(6%);
+  transition: all 1.5s;
 }
 .hidden-to-up {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(10%);
+  transform: translateY(6%);
   transition: all 1s;
 }
 .hidden-heading-time {
   opacity: 0.7;
   transform: scale(0.80);
-  transform: translateY(20%);
-  transition: all 2.51s;
+  transform: translateY(8%);
+  transition: all 1.51s;
 }
 .show {
   opacity: 1;
