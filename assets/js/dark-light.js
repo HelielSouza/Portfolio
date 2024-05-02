@@ -18,17 +18,19 @@ const toggleDarkMode = () => {
         ['.dark-bg-menu', 'light-bg-menu'],
         ['.about-text-p', 'dark-color'],
         ['.nav-list', 'light-bg-menu'],
-        ['footer', 'dark-text-footer']
+        ['footer', 'dark-text-footer'],
+        ['.menu-hamburguer-open div', 'dark-color-background'] // Adjusted for divs inside menu-hamburguer-open
     ];
 
     elementsToToggleClass.forEach(([selector, className]) => {
-        document.querySelector(selector).classList.toggle(className);
+        document.querySelectorAll(selector).forEach(element => {
+            element.classList.toggle(className);
+        });
     });
 
     const elementsToToggleColor = [
         'p',
         '.menu ul li a',
-        '.menu-hamburguer-open div',
         '.neonText',
         '.link-item .span-link span',
         '.link-item .span-not-ok span',
@@ -47,7 +49,7 @@ const toggleDarkMode = () => {
 
     elementsToToggleColor.forEach(selector => {
         document.querySelectorAll(selector).forEach(element => {
-            if (selector !== 'footer') {
+            if (!selector.startsWith('.menu-hamburguer-open')) {
                 element.classList.toggle('dark-color');
             }
         });
