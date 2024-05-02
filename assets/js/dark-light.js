@@ -36,6 +36,9 @@ chk.addEventListener('change', () => {
     document.querySelector('.nav-list').classList.toggle('light-bg-menu');
     
 
+    document.querySelectorAll('p').forEach(h2 => {
+        h2.classList.toggle('dark-gray-color');
+    })
     document.querySelectorAll('.menu ul li a').forEach(h2 => {
         h2.classList.toggle('dark-color');
     })
@@ -47,9 +50,6 @@ chk.addEventListener('change', () => {
     })
     document.querySelectorAll('.neonText').forEach(h2 => {
         h2.classList.toggle('dark-color');
-    })
-    document.querySelectorAll('.main-content p').forEach(p => {
-        p.classList.toggle('dark-color');
     })
     document.querySelectorAll('.link-item .span-link span').forEach(span => {
         span.classList.toggle('dark-color');
@@ -121,6 +121,5 @@ chk.addEventListener('change', () => {
         form_lgnd.classList.toggle('dark-text-footer');
     });
     document.querySelector('.form-group button').classList.toggle('form-button-light');
-    
 });
 
