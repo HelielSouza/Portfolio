@@ -91,6 +91,9 @@ body .full-width {
   background-position: center center;
   color: var(--white-color);
 }
+.scroll-lock {
+    overflow: hidden;
+}
 .dark-bg-menu {
   background-color: var(--dark-color);
 }
