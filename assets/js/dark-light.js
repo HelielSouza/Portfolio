@@ -19,7 +19,7 @@ const toggleDarkMode = () => {
         ['.about-text-p', 'dark-color'],
         ['.nav-list', 'light-bg-menu'],
         ['footer', 'dark-text-footer'],
-        ['.menu-hamburguer-open div', 'dark-color-background'] // Adjusted for divs inside menu-hamburguer-open
+        ['.menu-hamburguer-open div', 'dark-color-background']
     ];
 
     elementsToToggleClass.forEach(([selector, className]) => {
@@ -56,6 +56,8 @@ const toggleDarkMode = () => {
     });
 
     const elementsToToggleSpecificClass = [
+        ['.intro .buttons .meet-me', 'meet-me-light-crimson'],
+        ['.intro .buttons .talk-me', 'talk-me-light-crimson'],
         ['.menu ul li a', 'crimson-color-hover'],
         ['.slide-show .list .item', 'slide-white-shadow'],
         ['.timeline-content .content', 'crimson-color-border'],
@@ -65,7 +67,9 @@ const toggleDarkMode = () => {
         ['.card', 'card-dark-shadow'],
         ['.form-group input', ['crimson-color-border', 'crimson-box-shadow']],
         ['.form-group textarea', ['crimson-color-border', 'crimson-box-shadow']],
-        ['.form-group button', 'form-button-light']
+        ['.form-group button', 'form-button-light'],
+        ['.back-to-top', 'back-to-top-light'],
+        ['.about .cv-link', 'cv-link-light']
     ];
 
     elementsToToggleSpecificClass.forEach(([selector, classes]) => {

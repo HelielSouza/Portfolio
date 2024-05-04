@@ -4,6 +4,7 @@
   --light-gray-color: #EEEEEE;
   --secondary-color: #dc143c;
   --blue-basic: #658bf7;
+  --blue-light: #0ef;
   --gap: 3rem;
   --dark-color:#010216;
 }
@@ -93,6 +94,27 @@ body .full-width {
 }
 .scroll-lock {
     overflow: hidden;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--dark-color);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--white-color);
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 0.5s;
+}
+.back-to-top.visible {
+    opacity: 1;
 }
 .dark-bg-menu {
   background-color: var(--dark-color);
@@ -269,28 +291,37 @@ body .full-width {
 .intro .buttons {
   display: flex;
   flex-wrap: nowrap;
-  gap: 3rem;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto;
-  max-width: 70%;
 }
 .intro .buttons .talk-me, .intro .buttons .meet-me{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1px 10px;
-  margin: 0 auto;
-  width: 50%;
-  color: var(--white-color);
+  width: 45%;
+  height: 5rem;
   border-radius: 8px;
-  box-shadow: 6px 7px 10px #0a0a0a63;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 .intro .buttons .talk-me {
-  background-color: rgb(21 111 21);
+  background-color: var(--dark-color);
+  border: 2px solid var(--blue-light);
+  color: var(--blue-light);
 }
 .intro .buttons .meet-me {
-  background-color: rgb(113 41 141);
+  border: 2px solid var(--blue-light);
+  background-color: var(--blue-light);
+  color: var(--dark-color);
+}
+.intro .buttons .talk-me:hover, .intro .buttons .meet-me:hover {
+    transform: scale(1.1);
+}
+.intro .buttons i {
+    font-size: 22px;
+    margin-left: 1rem;
 }
 
 /* ---------------------------------------------- About section */
@@ -333,7 +364,22 @@ body .full-width {
 .about-text-content strong {
   color: cornflowerblue;
 }
-
+.about .curriculum {
+    margin: 4rem auto 0;
+}
+.about .cv-link {
+    border: 2px solid var(--blue-light);
+    background-color: var(--dark-color);
+    color: var(--blue-light); 
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+}
+.about .cv-link:hover {
+    border: 2px solid var(--blue-light);
+    background-color: var(--blue-light);
+    color: var(--dark-color);
+}
 /* ---------------------------------------------- Projects carrousel section */
 .projects-content { /* div */
   position: relative;
@@ -549,7 +595,7 @@ body .full-width {
   transform: translateY(30px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation: showContent .8s .1s ease-in-out 1 forwards;
 }
 
 /* ---------------------------------------------- Trails */
@@ -585,7 +631,7 @@ body .full-width {
 }
 .timeline-column .timeline-box {
   position: relative;
-  border-left: 2px solid #0ef;
+  border-left: 2px solid var(--blue-light);
 }
 .timeline-box .timeline-content {
   position: relative;
@@ -598,19 +644,19 @@ body .full-width {
   left: -10.5px;
   width: 20px;
   height: 20px;
-  background-color: #0ef;
+  background-color: var(--blue-light);
   border-radius: 50%;
 }
 .timeline-content .content {
   padding: 24px;
-  border: 2px solid #0ef;
+  border: 2px solid var(--blue-light);
   border-radius: 8px;
   margin-bottom: 65px;
   background: var(--dark-color);
 }
 .timeline-content .content .year {
  font-size: 16px; 
- color: #0ef;
+ color: var(--blue-light);
 }
 .timeline-content .content .year i {
   margin-right: 8px;
@@ -902,6 +948,30 @@ body .full-width {
   color: var(--dark-color) !important;
   background-color: white !important;
 }
+.talk-me-light-crimson {
+    background-color: var(--white-color) !important;
+    border: 2px solid var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+}
+.meet-me-light-crimson {
+  border: 2px solid var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
+  color: var(--white) !important;
+}
+.back-to-top-light {
+    background: var(--white-color) !important;
+    color: var(--dark-color) !important;
+    border: 1px solid var(--dark-color) !important;
+}
+.cv-link-light {
+    border: 2px solid var(--secondary-color) !important;
+    background-color: var(--white-color) !important;
+    color: var(--secondary-color) !important;
+}
+.cv-link-light:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white-color) !important;
+}
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -962,6 +1032,12 @@ body .full-width {
 }
 
 /* ---------------------------------------------- Responsive */
+@media (min-width: 280px) and (max-width: 1200px) {
+    .intro .buttons a i{
+        display: none;
+    }
+}
+
 @media (min-width: 1301px) and (max-width: 1400px) { 
 
   /* ---------------------------------------------- General*/
@@ -2210,11 +2286,14 @@ body .full-width {
       justify-content: center;
       height: unset;
       min-height: 100vh;
-      margin-top: -3rem;
+      margin-top: 0rem;
       margin-bottom: 4rem;
   }
   .intro-img img {
       height: 20rem;
+  }
+  .intro-text-content {
+      margin-top: 3rem;
   }
   
   /* ---------------------------------------------- About*/
@@ -2275,12 +2354,12 @@ body .full-width {
       width: 75%;
       margin: -1rem auto 1rem auto;
   }
-  .content .info .bottom {
+  .content .info .bottom {  
       flex-direction: column-reverse;
   }
   .thumbnail {
       position: absolute;
-      top: 45%;
+      top: 40%;
       padding: 0;
   }
   .thumbnail .item {
@@ -2291,6 +2370,10 @@ body .full-width {
       flex-direction: column;
       max-width: 38rem;
       margin: 0 auto;
+  }
+  .arrows {
+      top: 25%;
+      right: 35px;
   }
  
   /* ---------------------------------------------- Certificates */
@@ -2489,9 +2572,6 @@ body .full-width {
   }
   .intro-img img {
       height: 18rem;
-  }
-  .intro .talk-me {
-      font-size: 14px;
   }
   .intro-text-content {
       margin-top: -2rem;
