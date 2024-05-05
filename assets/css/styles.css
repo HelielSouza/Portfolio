@@ -99,7 +99,7 @@ body .full-width {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    background: var(--dark-color);
+    background: #010216a3;
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -959,7 +959,7 @@ body .full-width {
   color: var(--white) !important;
 }
 .back-to-top-light {
-    background: var(--white-color) !important;
+    background: #ffffff87 !important;
     color: var(--dark-color) !important;
     border: 1px solid var(--dark-color) !important;
 }
@@ -1329,7 +1329,7 @@ body .full-width {
   }
 
   .checkbox:checked + .label .ball {
-      transform: translateX(30px);
+      transform: translateX(29px);
   }
 
   /* ---------------------------------------------- Intro */
@@ -1550,7 +1550,7 @@ body .full-width {
       font-size: 15px;
   }
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
   /* ---------------------------------------------- Intro */
@@ -1759,7 +1759,7 @@ body .full-width {
       font-size: 15px;
   }
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
   /* ---------------------------------------------- Intro */
@@ -2002,7 +2002,7 @@ body .full-width {
       font-size: 15px;
   }
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
 
@@ -2274,7 +2274,7 @@ body .full-width {
   }
 
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
 
@@ -2553,7 +2553,7 @@ body .full-width {
       font-size: 15px;
   }
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
 
@@ -2837,7 +2837,7 @@ body .full-width {
       font-size: 15px;
   }
   .checkbox:checked + .label .ball {
-      transform: translateX(21px);
+      transform: translateX(23px);
   }
 
   /* ---------------------------------------------- Intro */

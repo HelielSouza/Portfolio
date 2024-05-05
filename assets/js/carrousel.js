@@ -4,10 +4,9 @@ let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 let content = document.querySelectorAll('.content .item');
 
-// config param
 let countItem = items.length;
 let itemActive = 0;
-// event next click
+
 next.onclick = function(){
     itemActive = itemActive + 1;
     if(itemActive >= countItem){
@@ -15,7 +14,6 @@ next.onclick = function(){
     }
     showSlider();
 }
-//event prev click
 prev.onclick = function(){
     itemActive = itemActive - 1;
     if(itemActive < 0){
