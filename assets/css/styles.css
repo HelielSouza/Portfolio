@@ -269,7 +269,7 @@ body .full-width {
   height: 65px;
 }
 
-/* ---------------------------------------------- Home section*/
+/* ---------------------------------------------- Intro section*/
 .intro-content {
   position: relative;
   display: grid;
@@ -486,6 +486,10 @@ body .full-width {
   opacity: 0;
   transition: .5s;
 }
+.slider .list .item a {
+    width: 100%;
+    height: 100%;
+}
 .slider .list .item img{
   border-radius: 30px;
   width: 100%;
@@ -598,7 +602,7 @@ body .full-width {
   animation: showContent .8s .1s ease-in-out 1 forwards;
 }
 
-/* ---------------------------------------------- Trails */
+/* ---------------------------------------------- Trails section */
 .trails-content {
   position: relative;
   display: flex;
