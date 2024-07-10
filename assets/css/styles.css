@@ -84,6 +84,10 @@ body .full-width {
   width: 100%;
   flex: 1 1 100%;
 }
+.underline-link {
+    text-decoration: underline;
+    color: white;
+}
 
 /* ---------------------------------------------- General */
 .dark-bg-svg {
