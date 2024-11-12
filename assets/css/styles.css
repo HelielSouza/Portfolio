@@ -155,32 +155,32 @@ body .full-width {
 /* ---------------------------------------------- Scrool animations style */
 .hidden-heading {
   opacity: 0.9;
-  filter: blur(2px);
-  transform: translateX(-5%);
+  filter: blur(1.5px);
+  transform: translateX(-2%);
   transition: all 1s;
 }
 .hidden-p {
   opacity: 0.9;
-  filter: blur(2px);
-  transform: translateX(-10%);
+  filter: blur(1.5px);
+  transform: translateX(-2%);
   transition: all 1s;
 }
 .hidden-fade-in {
   transform: scale(0.95); 
-  transform: translateX(6%);
+  transform: translateX(3%);
   transition: all 1.5s;
 }
 .hidden-to-up {
-  opacity: 0.6;
+  opacity: 0.8;
   filter: blur(2px);
-  transform: translateY(6%);
+  transform: translateY(2%);
   transition: all 1s;
 }
 .hidden-heading-time {
-  opacity: 0.6;
-  transform: scale(0.80);
-  transform: translateY(8%);
-  transition: all 1.51s;
+  opacity: 0.7;
+  transform: scale(0.90);
+  transform: translateY(3%);
+  transition: all 1.5s;
 }
 .show {
   opacity: 1;
