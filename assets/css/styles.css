@@ -769,14 +769,15 @@ body .full-width {
 
 /* ---------------------------------------------- Contacts section */
 .contacts {
-  margin-bottom: 10rem;
+  margin-bottom: -15rem;
 }
 .contacts-content {
   position: relative;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
-  min-height: 100vh;
+  min-height: 50vh;
   margin-top: 1rem;
 }
 .contacts-text-content {
